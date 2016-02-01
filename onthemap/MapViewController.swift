@@ -41,24 +41,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         let locations = hardCodedLocationData()
         var annotations = [MKPointAnnotation]()
         
-        for dictionary in locations {
-            let lat = CLLocationDegrees(dictionary["latitude"] as! Double)
-            let long = CLLocationDegrees(dictionary["longitude"] as! Double)
-            
-            // The lat and long are used to create a CLLocationCoordinates2D instance.
-            let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
-            
-            let first = dictionary["firstName"] as! String
-            let last = dictionary["lastName"] as! String
-            let mediaURL = dictionary["mediaURL"] as! String
-            
-            let entry = Entry(first: first, last: last, mediaURL: mediaURL, coordinates: coordinate)
+        for dictionary in locations {            
+            let entry = StudentInformation(dictionary: dictionary)
             
             // Here we create the annotation and set its coordiate, title, and subtitle properties
             let annotation = MKPointAnnotation()
-            annotation.coordinate = coordinate
-            annotation.title = "\(first) \(last)"
-            annotation.subtitle = mediaURL
+            annotation.coordinate = entry.coordinates
+            annotation.title = "\(entry.first) \(entry.last)"
+            annotation.subtitle = entry.mediaURL
             
             // Finally we place the annotation in an array of annotations.
             annotations.append(annotation)

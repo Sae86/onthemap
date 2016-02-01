@@ -16,9 +16,10 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
-    var entries: [Entry] {
+    var entries: [StudentInformation] {
         let object = UIApplication.sharedApplication().delegate
         let appDelegate = object as! AppDelegate
         return appDelegate.entries

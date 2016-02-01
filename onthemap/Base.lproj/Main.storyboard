@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Roboto-Medium.ttf">
@@ -81,9 +82,6 @@
                             </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Udacity" translatesAutoresizingMaskIntoConstraints="NO" id="FVw-GF-IvW">
                                 <rect key="frame" x="0.0" y="-256" width="256" height="256"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="103" y="79" width="194" height="207.5"/>
-                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -149,14 +147,8 @@
                                 <exclude reference="1BM-Xz-mfC"/>
                                 <exclude reference="Fg8-cS-430"/>
                                 <exclude reference="XR5-0o-UAH"/>
-                                <exclude reference="5Kg-Qh-Lef"/>
-                                <exclude reference="Gfk-uZ-PGe"/>
-                                <exclude reference="PLq-DO-9jv"/>
-                                <exclude reference="XjA-Yv-ziT"/>
-                                <exclude reference="eH6-pN-OfN"/>
-                                <exclude reference="gfT-vN-naA"/>
-                                <exclude reference="kGM-xY-kkb"/>
-                                <exclude reference="slo-Is-GaO"/>
+                                <exclude reference="9xt-S4-Qf7"/>
+                                <exclude reference="lD7-uh-CDG"/>
                                 <exclude reference="08d-si-ASY"/>
                                 <exclude reference="KGF-mg-NdC"/>
                                 <exclude reference="Y0R-Me-edv"/>
@@ -171,6 +163,11 @@
                                 <exclude reference="FUk-yR-0iT"/>
                                 <exclude reference="S3E-Fb-nnE"/>
                                 <exclude reference="tjL-2D-AXg"/>
+                                <exclude reference="Dgd-vw-RGY"/>
+                                <exclude reference="ND5-CZ-zeH"/>
+                                <exclude reference="VDz-kx-cCK"/>
+                                <exclude reference="pIk-EZ-OBD"/>
+                                <exclude reference="zWi-2Z-I3w"/>
                                 <exclude reference="38Z-qa-4Cy"/>
                                 <exclude reference="8P3-Ns-xWv"/>
                                 <exclude reference="Zfw-Ma-vUq"/>
@@ -185,13 +182,14 @@
                                 <exclude reference="mZF-cT-ceN"/>
                                 <exclude reference="tDR-mP-0eW"/>
                                 <exclude reference="ycq-XQ-vwy"/>
-                                <exclude reference="Dgd-vw-RGY"/>
-                                <exclude reference="ND5-CZ-zeH"/>
-                                <exclude reference="VDz-kx-cCK"/>
-                                <exclude reference="pIk-EZ-OBD"/>
-                                <exclude reference="zWi-2Z-I3w"/>
-                                <exclude reference="9xt-S4-Qf7"/>
-                                <exclude reference="lD7-uh-CDG"/>
+                                <exclude reference="5Kg-Qh-Lef"/>
+                                <exclude reference="Gfk-uZ-PGe"/>
+                                <exclude reference="PLq-DO-9jv"/>
+                                <exclude reference="XjA-Yv-ziT"/>
+                                <exclude reference="eH6-pN-OfN"/>
+                                <exclude reference="gfT-vN-naA"/>
+                                <exclude reference="kGM-xY-kkb"/>
+                                <exclude reference="slo-Is-GaO"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -208,14 +206,8 @@
                                 <include reference="1BM-Xz-mfC"/>
                                 <include reference="Fg8-cS-430"/>
                                 <include reference="XR5-0o-UAH"/>
-                                <exclude reference="5Kg-Qh-Lef"/>
-                                <include reference="Gfk-uZ-PGe"/>
-                                <exclude reference="PLq-DO-9jv"/>
-                                <exclude reference="XjA-Yv-ziT"/>
-                                <include reference="eH6-pN-OfN"/>
-                                <include reference="gfT-vN-naA"/>
-                                <exclude reference="kGM-xY-kkb"/>
-                                <exclude reference="slo-Is-GaO"/>
+                                <exclude reference="9xt-S4-Qf7"/>
+                                <include reference="lD7-uh-CDG"/>
                                 <include reference="08d-si-ASY"/>
                                 <exclude reference="KGF-mg-NdC"/>
                                 <exclude reference="Y0R-Me-edv"/>
@@ -230,6 +222,11 @@
                                 <exclude reference="FUk-yR-0iT"/>
                                 <include reference="S3E-Fb-nnE"/>
                                 <include reference="tjL-2D-AXg"/>
+                                <exclude reference="Dgd-vw-RGY"/>
+                                <exclude reference="ND5-CZ-zeH"/>
+                                <include reference="VDz-kx-cCK"/>
+                                <exclude reference="pIk-EZ-OBD"/>
+                                <include reference="zWi-2Z-I3w"/>
                                 <include reference="38Z-qa-4Cy"/>
                                 <exclude reference="8P3-Ns-xWv"/>
                                 <include reference="Zfw-Ma-vUq"/>
@@ -244,13 +241,14 @@
                                 <include reference="mZF-cT-ceN"/>
                                 <exclude reference="tDR-mP-0eW"/>
                                 <include reference="ycq-XQ-vwy"/>
-                                <exclude reference="Dgd-vw-RGY"/>
-                                <exclude reference="ND5-CZ-zeH"/>
-                                <include reference="VDz-kx-cCK"/>
-                                <exclude reference="pIk-EZ-OBD"/>
-                                <include reference="zWi-2Z-I3w"/>
-                                <exclude reference="9xt-S4-Qf7"/>
-                                <include reference="lD7-uh-CDG"/>
+                                <exclude reference="5Kg-Qh-Lef"/>
+                                <include reference="Gfk-uZ-PGe"/>
+                                <exclude reference="PLq-DO-9jv"/>
+                                <exclude reference="XjA-Yv-ziT"/>
+                                <include reference="eH6-pN-OfN"/>
+                                <include reference="gfT-vN-naA"/>
+                                <exclude reference="kGM-xY-kkb"/>
+                                <exclude reference="slo-Is-GaO"/>
                             </mask>
                         </variation>
                     </view>
@@ -277,10 +275,43 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uD5-9W-ncE">
                                 <rect key="frame" x="-1" y="0.0" width="600" height="556"/>
                             </mapView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8a-xi-XND">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="On the map" id="xw5-Dv-qhj">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="qTp-EA-Ege">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KNW-hn-gSk">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Logout"/>
+                                            </button>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem id="BfT-Df-rmn">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Px0-N4-NAv">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Reload"/>
+                                                </button>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" id="neu-gq-zOY">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="383-fW-gAk">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="Pin"/>
+                                                </button>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uD5-9W-ncE" firstAttribute="top" secondItem="uo3-2f-cd4" secondAttribute="bottom" constant="1" id="1dg-Rm-0v2"/>
+                            <constraint firstItem="uD5-9W-ncE" firstAttribute="top" secondItem="uo3-2f-cd4" secondAttribute="bottom" constant="49" id="6ky-4I-WYi"/>
                             <constraint firstItem="uD5-9W-ncE" firstAttribute="centerX" secondItem="RhQ-08-kyA" secondAttribute="centerX" id="Kh8-OU-7EM"/>
                             <constraint firstItem="uD5-9W-ncE" firstAttribute="leading" secondItem="RhQ-08-kyA" secondAttribute="leadingMargin" constant="-17" id="PhU-Fg-qC4"/>
                             <constraint firstItem="IAm-kW-vDU" firstAttribute="top" secondItem="uD5-9W-ncE" secondAttribute="bottom" constant="4" id="QFE-5X-EEv"/>
@@ -289,9 +320,10 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="uD5-9W-ncE"/>
+                                <exclude reference="Y8a-xi-XND"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="1dg-Rm-0v2"/>
+                                <exclude reference="6ky-4I-WYi"/>
                                 <exclude reference="Kh8-OU-7EM"/>
                                 <exclude reference="PhU-Fg-qC4"/>
                                 <exclude reference="n6X-bz-V5x"/>
@@ -301,9 +333,10 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="uD5-9W-ncE"/>
+                                <include reference="Y8a-xi-XND"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="1dg-Rm-0v2"/>
+                                <include reference="6ky-4I-WYi"/>
                                 <include reference="Kh8-OU-7EM"/>
                                 <include reference="PhU-Fg-qC4"/>
                                 <include reference="n6X-bz-V5x"/>
@@ -312,18 +345,20 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Map" selectedImage="Map" id="fzW-gp-MRR"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="uD5-9W-ncE" id="lWg-Ng-BRo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8RP-cT-s6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122.5" y="62.25"/>
+            <point key="canvasLocation" x="2113.5" y="69.75"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--On the map-->
         <scene sceneID="eyd-yO-naG">
             <objects>
-                <tabBarController id="eb7-tJ-J12" sceneMemberID="viewController">
+                <tabBarController title="On the map" id="eb7-tJ-J12" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="73E-go-aTR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -342,16 +377,16 @@
         <scene sceneID="5LO-Gg-aGk">
             <objects>
                 <tableViewController title="TableViewController" id="aRV-rk-dk5" customClass="TableViewController" customModule="onthemap" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="47" sectionHeaderHeight="28" sectionFooterHeight="28" id="6me-yN-lhj">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" id="6me-yN-lhj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableCell" rowHeight="47" id="Joa-rE-0FO">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableCell" rowHeight="55" id="Joa-rE-0FO">
+                                <rect key="frame" x="0.0" y="28" width="600" height="47"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Joa-rE-0FO" id="kym-Lw-TT9">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="46.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin" translatesAutoresizingMaskIntoConstraints="NO" id="VYv-RG-8QT">
@@ -380,10 +415,11 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="" image="List" selectedImage="List" id="L4x-1w-gOa"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLx-o1-mop" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122.5" y="739.5"/>
+            <point key="canvasLocation" x="2113.5" y="816"/>
         </scene>
     </scenes>
     <resources>

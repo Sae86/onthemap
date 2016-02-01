@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		02319EA71C5DB1E100818AD5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02319EA61C5DB1E100818AD5 /* TableViewController.swift */; };
 		02319EA91C5DB1F100818AD5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02319EA81C5DB1F100818AD5 /* MapViewController.swift */; };
-		02319EAB1C5EC2AE00818AD5 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02319EAA1C5EC2AE00818AD5 /* Entry.swift */; };
+		02319EAB1C5EC2AE00818AD5 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02319EAA1C5EC2AE00818AD5 /* StudentInformation.swift */; };
 		024C5D461C5B07AC0012DDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5D451C5B07AC0012DDF1 /* AppDelegate.swift */; };
 		024C5D481C5B07AC0012DDF1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5D471C5B07AC0012DDF1 /* LoginViewController.swift */; };
 		024C5D4B1C5B07AC0012DDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024C5D491C5B07AC0012DDF1 /* Main.storyboard */; };
@@ -26,6 +26,7 @@
 		024C5D7C1C5B208B0012DDF1 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024C5D751C5B208B0012DDF1 /* Roboto-Thin.ttf */; };
 		024C5D7D1C5B208B0012DDF1 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024C5D751C5B208B0012DDF1 /* Roboto-Thin.ttf */; };
 		024C5D7E1C5B208B0012DDF1 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024C5D751C5B208B0012DDF1 /* Roboto-Thin.ttf */; };
+		02B1849D1C5F066900EE1C11 /* NetworkFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1849C1C5F066900EE1C11 /* NetworkFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,7 @@
 /* Begin PBXFileReference section */
 		02319EA61C5DB1E100818AD5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		02319EA81C5DB1F100818AD5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		02319EAA1C5EC2AE00818AD5 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		02319EAA1C5EC2AE00818AD5 /* StudentInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
 		024C5D421C5B07AC0012DDF1 /* onthemap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onthemap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		024C5D451C5B07AC0012DDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		024C5D471C5B07AC0012DDF1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		024C5D731C5B208B0012DDF1 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		024C5D741C5B208B0012DDF1 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		024C5D751C5B208B0012DDF1 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		02B1849C1C5F066900EE1C11 /* NetworkFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,8 @@
 				024C5D511C5B07AC0012DDF1 /* Info.plist */,
 				02319EA61C5DB1E100818AD5 /* TableViewController.swift */,
 				02319EA81C5DB1F100818AD5 /* MapViewController.swift */,
-				02319EAA1C5EC2AE00818AD5 /* Entry.swift */,
+				02319EAA1C5EC2AE00818AD5 /* StudentInformation.swift */,
+				02B1849C1C5F066900EE1C11 /* NetworkFunctions.swift */,
 			);
 			path = onthemap;
 			sourceTree = "<group>";
@@ -292,10 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02319EAB1C5EC2AE00818AD5 /* Entry.swift in Sources */,
+				02319EAB1C5EC2AE00818AD5 /* StudentInformation.swift in Sources */,
 				024C5D481C5B07AC0012DDF1 /* LoginViewController.swift in Sources */,
 				02319EA71C5DB1E100818AD5 /* TableViewController.swift in Sources */,
 				024C5D461C5B07AC0012DDF1 /* AppDelegate.swift in Sources */,
+				02B1849D1C5F066900EE1C11 /* NetworkFunctions.swift in Sources */,
 				02319EA91C5DB1F100818AD5 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

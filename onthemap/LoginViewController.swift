@@ -31,6 +31,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func udacityLogin(sender: AnyObject) {
+        requestSession()
+        getPublicUserData()
         performSegueWithIdentifier("login", sender: self)
     }
 }
