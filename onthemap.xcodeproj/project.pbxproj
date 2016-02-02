@@ -26,6 +26,8 @@
 		024C5D7C1C5B208B0012DDF1 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024C5D751C5B208B0012DDF1 /* Roboto-Thin.ttf */; };
 		024C5D7D1C5B208B0012DDF1 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024C5D751C5B208B0012DDF1 /* Roboto-Thin.ttf */; };
 		024C5D7E1C5B208B0012DDF1 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024C5D751C5B208B0012DDF1 /* Roboto-Thin.ttf */; };
+		027E13641C60236B00BF1024 /* AddPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027E13631C60236B00BF1024 /* AddPinViewController.swift */; };
+		027E13661C602B0E00BF1024 /* FindOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027E13651C602B0E00BF1024 /* FindOnMapViewController.swift */; };
 		02B1849D1C5F066900EE1C11 /* NetworkFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1849C1C5F066900EE1C11 /* NetworkFunctions.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,8 @@
 		024C5D731C5B208B0012DDF1 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		024C5D741C5B208B0012DDF1 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		024C5D751C5B208B0012DDF1 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		027E13631C60236B00BF1024 /* AddPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPinViewController.swift; sourceTree = "<group>"; };
+		027E13651C602B0E00BF1024 /* FindOnMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindOnMapViewController.swift; sourceTree = "<group>"; };
 		02B1849C1C5F066900EE1C11 /* NetworkFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +134,8 @@
 				02319EA81C5DB1F100818AD5 /* MapViewController.swift */,
 				02319EAA1C5EC2AE00818AD5 /* StudentInformation.swift */,
 				02B1849C1C5F066900EE1C11 /* NetworkFunctions.swift */,
+				027E13631C60236B00BF1024 /* AddPinViewController.swift */,
+				027E13651C602B0E00BF1024 /* FindOnMapViewController.swift */,
 			);
 			path = onthemap;
 			sourceTree = "<group>";
@@ -298,9 +304,11 @@
 				02319EAB1C5EC2AE00818AD5 /* StudentInformation.swift in Sources */,
 				024C5D481C5B07AC0012DDF1 /* LoginViewController.swift in Sources */,
 				02319EA71C5DB1E100818AD5 /* TableViewController.swift in Sources */,
+				027E13661C602B0E00BF1024 /* FindOnMapViewController.swift in Sources */,
 				024C5D461C5B07AC0012DDF1 /* AppDelegate.swift in Sources */,
 				02B1849D1C5F066900EE1C11 /* NetworkFunctions.swift in Sources */,
 				02319EA91C5DB1F100818AD5 /* MapViewController.swift in Sources */,
+				027E13641C60236B00BF1024 /* AddPinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
