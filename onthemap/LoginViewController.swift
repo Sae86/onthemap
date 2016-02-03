@@ -35,18 +35,19 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func udacityLogin(sender: AnyObject) {
-        //requestSession()
-        getPublicUserData()
-        getStudentLocation()
+        requestSession()
+        //getStudentLocation()
     }    
     
     func requestSession(){
+        let emailText = email.text!
+        let pswdText = pswd.text!
         let request = NSMutableURLRequest(URL: NSURL(string: "https://www.udacity.com/api/session")!)
         request.HTTPMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         print(email.text!)
-        request.HTTPBody = "{\"udacity\": {\"username\": \"\(email.text)\", \"password\": \"\(pswd.text!)\"}}".dataUsingEncoding(NSUTF8StringEncoding)
+        request.HTTPBody = "{\"udacity\": {\"username\": \"\(emailText)\", \"password\": \"\(pswdText)\"}}".dataUsingEncoding(NSUTF8StringEncoding)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(request){ data, response, error in
             if error != nil { // Handle error
@@ -57,15 +58,28 @@ class LoginViewController: UIViewController {
                 return
             }else{
                 let newData = data!.subdataWithRange(NSMakeRange(5, data!.length - 5)) /* subset response data! */
-                let newDataString = NSString(data: newData, encoding: NSUTF8StringEncoding)
-                let isError = newDataString?.substringFromIndex(17).hasPrefix("error")
-                if (isError!){
-                    let errorStr = newDataString?.substringFromIndex(26)
+                let parsedDict: NSDictionary?
+                do{
+                    try parsedDict = NSJSONSerialization.JSONObjectWithData(newData, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary
+                } catch {
+                    return
+                }
+                if (parsedDict!["error"] != nil){
+                    guard let errorStr = parsedDict!["error"]! as? String else { print("No error description returned"); return }
                     // http://www.ioscreator.com/tutorials/display-an-alert-view-in-ios8-with-swift
-                    let alertController = UIAlertController(title: "On the map", message: errorStr!, preferredStyle: UIAlertControllerStyle.Alert)
+                    let alertController = UIAlertController(title: "On the map", message: errorStr, preferredStyle: UIAlertControllerStyle.Alert)
                     alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
                     self.presentViewController(alertController, animated: true, completion: nil)
                 }else{
+                    guard let topDictionary = parsedDict,
+                        accountDictionary = topDictionary["account"] as? NSDictionary,
+                        userKey = accountDictionary["key"] as? String
+                        else {
+                            print("could not get user key")
+                            return
+                    }
+                    print("userKey=\(userKey)")
+                    self.getPublicUserData(userKey)
                     self.performSegueWithIdentifier("login", sender: self)
                 }
             }
@@ -100,8 +114,8 @@ class LoginViewController: UIViewController {
         task.resume()
     }
     
-    func getPublicUserData(){
-        let request = NSMutableURLRequest(URL: NSURL(string: "https://www.udacity.com/api/users/3903878747")!)
+    func getPublicUserData(userID: String){
+        let request = NSMutableURLRequest(URL: NSURL(string: "https://www.udacity.com/api/users/\(userID)")!)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(request) { data, response, error in
             if error != nil { // Handle error...
