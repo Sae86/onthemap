@@ -78,7 +78,6 @@ class LoginViewController: UIViewController {
                             print("could not get user key")
                             return
                     }
-                    print("userKey=\(userKey)")
                     self.getPublicUserData(userKey)
                     self.performSegueWithIdentifier("login", sender: self)
                 }
